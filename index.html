@@ -28,73 +28,84 @@
 </head>
 
 <style>
-    
+    html {
+        scroll-behavior: smooth;
+    }
 
-html {
-  scroll-behavior: smooth;
-}
-.slideshow {
-  position: relative;
-  z-index: 1;
-  height: 100%;
-  
-}
-.slideshow * {
-  outline: none;
-}
-.slideshow .slider {
-  box-shadow: 0 20px 50px -25px black;
-}
-.slideshow .slider-track {
-  transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
-}
-.slideshow .item {
-  height: 100%;
-  position: relative;
-  z-index: 1;
-}
-.slideshow .item img {
-  width: 100%;
-  transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
-  transform: scale(1.2);
-}
-.slideshow .item.slick-active img {
-  transform: scale(1);
-  -webkit-animation: cssAnimation 8s 1 ease-in-out;
-  animation: cssAnimation 8s 1 ease-in-out;
-}
+    .slideshow {
+        position: relative;
+        z-index: 1;
+        height: 100%;
 
-@keyframes cssAnimation {
-  from {
-    -webkit-transform: scale(1.5) translate(0px);
-  }
-  to {
-    -webkit-transform: scale(1.0) translate(0px);
-  }
-}
-@-webkit-keyframes cssAnimation {
-    /* 1 */
-  from {
-    -webkit-transform: scale(1.5) translate(0px);
-  }
-  /* 1.3 */
-  to {
-    -webkit-transform: scale(1) translate(0px);
-  }
-}@media only screen and ( max-width: 768px) {
-  .title {
-      font-size:40px;
-  }
-}
+    }
 
-.slick-slide {
-   height:1000px;
-}
+    .slideshow * {
+        outline: none;
+    }
 
-.slick-slide img {
-   height:1000px;
-   object-fit: cover;
-}
+    .slideshow .slider {
+        box-shadow: 0 20px 50px -25px black;
+    }
+
+    .slideshow .slider-track {
+        transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+    }
+
+    .slideshow .item {
+        height: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .slideshow .item img {
+        width: 100%;
+        transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+        transform: scale(1.2);
+    }
+
+    .slideshow .item.slick-active img {
+        transform: scale(1);
+        -webkit-animation: cssAnimation 8s 1 ease-in-out;
+        animation: cssAnimation 8s 1 ease-in-out;
+    }
+
+    @keyframes cssAnimation {
+        from {
+            -webkit-transform: scale(1.5) translate(0px);
+        }
+
+        to {
+            -webkit-transform: scale(1.0) translate(0px);
+        }
+    }
+
+    @-webkit-keyframes cssAnimation {
+
+        /* 1 */
+        from {
+            -webkit-transform: scale(1.5) translate(0px);
+        }
+
+        /* 1.3 */
+        to {
+            -webkit-transform: scale(1) translate(0px);
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .title {
+            font-size: 40px;
+        }
+    }
+
+    .slick-slide {
+        height: 1000px;
+    }
+
+    .slick-slide img {
+        height: 1000px;
+        object-fit: cover;
+    }
 </style>
 
 <body>
@@ -119,7 +130,7 @@ html {
                 <li><a href="./classes.html">Classes</a></li>
                 <li><a href="#plan">Plan</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-            
+
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -151,10 +162,10 @@ html {
                         <ul>
                             <li class="active"><a href="./index.html">Home</a></li>
                             <li><a href="#ppt">PPT</a></li>
-                           
+
                             <li><a href="#plan">Plan</a></li>
                             <li><a href="#gallery">Gallery</a></li>
-                         
+
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
@@ -212,35 +223,36 @@ html {
         </div> -->
 
 
-    <div class="slideshow">
-        <div
-            style="flex-direction: column; position: absolute;z-index: 999;width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;">
-            <img data-aos="fade-down" src="assets/output-onlinejpgtools-removebg-preview.png" alt="">
-            <h1 class="title text-white" data-aos="fade-up">PERSONALIZED FITNESS</h1>
-            <h1 class="title text-white" style="text-shadow: 2px 2px 2px green;" data-aos="fade-up">PERSONALIZED PERFORMANCE</h1>
-        
+        <div class="slideshow">
+            <div
+                style="flex-direction: column; position: absolute;z-index: 999;width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;">
+                <img data-aos="fade-down" src="assets/output-onlinejpgtools-removebg-preview.png" alt="">
+                <h1 class="title text-white" data-aos="fade-up">PERSONALIZED FITNESS</h1>
+                <h1 class="title text-white" style="text-shadow: 2px 2px 2px green;" data-aos="fade-up">PERSONALIZED
+                    PERFORMANCE</h1>
+
+            </div>
+
+            <div class="slider">
+
+
+
+                <div class="item">
+                    <img src="assets/bw1.jpeg" />
+
+                </div>
+                <div class="item">
+                    <img src="assets/bw2.jpeg" />
+                </div>
+                <div class="item">
+                    <img src="assets/bw3.jpeg" />
+                </div>
+                <div class="item">
+                    <img src="assets/bw6.jpeg" />
+                </div>
+            </div>
+
         </div>
-
-        <div class="slider">
-
-
-
-            <div class="item">
-                <img src="assets/IMG_20210820_121129.jpg" />
-
-            </div>
-            <div class="item">
-                <img src="assets/IMG_20210820_121212.jpg" />
-            </div>
-            <div class="item">
-                <img src="assets/IMG_20210820_121014.jpg" />
-            </div>
-            <div class="item">
-                <img src="assets/IMG_20210820_121108.jpg" />
-            </div>
-        </div>
-
-    </div>
 
 
 
@@ -303,18 +315,24 @@ html {
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        
+
                         <span style="font-size: 50px;">PPT</span>
                         <h2>Private Personal Training</h2>
 
                         <br>
                         <br>
-                      
-                       
+
+
                         <div class="d-flex container">
-                                <div class="p-4" style=" flex: 1;text-align: left;">
-                                 <p> Welcome to your second home. You are unique and your training should be, too. No matter your age or fitness level, we are invested in helping you reach your personal goals because we take your health, well….personally. We don’t just jump in - we take the time to get to know you and understand where you are starting on your wellness journey, all before an experienced personal training team member creates your custom workout program to put you on the path to success. Whether you’re training in-studio or training virtually, we’re in this together. </p>
-                                    <!-- <p>SPPT sessions are held in our facility with no more than 6 people in a session.
+                            <div class="p-4" style=" flex: 1;text-align: left;">
+                                <p> Welcome to your second home. You are unique and your training should be, too. No
+                                    matter your age or fitness level, we are invested in helping you reach your personal
+                                    goals because we take your health, well….personally. We don’t just jump in - we take
+                                    the time to get to know you and understand where you are starting on your wellness
+                                    journey, all before an experienced personal training team member creates your custom
+                                    workout program to put you on the path to success. Whether you’re training in-studio
+                                    or training virtually, we’re in this together. </p>
+                                <!-- <p>SPPT sessions are held in our facility with no more than 6 people in a session.
 
                                     </p>
                                     <p>Obtaining all the benefits of one to one personal training within a small group, while at a
@@ -325,19 +343,20 @@ html {
                                     <p>This also enables us to maintain social distancing (At least 2 metres at all times)
                 
                                     </p> -->
+                            </div>
+                            <div class="" style="flex: 1;">
+                                <div style="height: 100%;background-position-y: center;" class="about-video set-bg"
+                                    data-setbg="assets/bw4.jpeg">
+                                    <a href="assets/Intro v1.mp4" class="play-btn video-popup"><i
+                                            class="fa fa-caret-right"></i></a>
                                 </div>
-                                <div class="" style="flex: 1;">
-                                    <div style="height: 100%;background-position-y: center;" class="about-video set-bg" data-setbg="assets/Promo-Instagram-SquarePost.jpeg">
-                                        <a href="assets/Intro v1.mp4" class="play-btn video-popup"><i
-                                                class="fa fa-caret-right"></i></a>
-                                    </div>
-                                </div>
+                            </div>
 
                         </div>
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </section>
     <!-- ChoseUs Section End -->
@@ -347,19 +366,20 @@ html {
                 <div class="col-lg-12">
                     <div class="section-title">
                         <span>Our Hygiene Protocol</span>
-                        <h2>We pride ourselves on how clean at a “Showroom Standard” we keep our facility.
+                        <h2 style="font-size: 30px;">We pride ourselves on how clean at a “Showroom Standard” we keep our facility.
 
-                            On top of a cleaning company coming in weekly to deep clean our facility, we stick to a 3 step hygiene protocol to keep you as safe as possible.</h2>
+                            On top of a cleaning company coming in weekly to deep clean our facility, we stick to a 3
+                            step hygiene protocol to keep you as safe as possible.</h2>
                     </div>
                 </div>
             </div>
-         
-            
+
+
             <div class="row">
-                
+
                 <div class="col-lg-4 col-sm-6">
                     <div class="cs-item">
-                        <span class="flaticon-034-stationary-bike"></span>
+                        <!-- <span class="flaticon-034-stationary-bike"></span> -->
                         <h4>Hand Sanitization</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             dolore facilisis.</p>
@@ -367,28 +387,28 @@ html {
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="cs-item">
-                        <span class="flaticon-033-juice"></span>
+                        <!-- <span class="flaticon-033-juice"></span> -->
                         <h4> Social Distancing</h4>
                         <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
                             facilisis.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-auto">
                     <div class="cs-item">
-                        <span class="flaticon-002-dumbell"></span>
+                        <!-- <span class="flaticon-002-dumbell"></span> -->
                         <h4>Fogging</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             dolore facilisis.</p>
                     </div>
                 </div>
-                
+
             </div>
         </div>
         <br>
         <br>
     </section>
     <!-- Banner Section Begin -->
-  
+
     <!-- Banner Section End -->
     <section id="plan" class="pricing-section spad">
         <div class="container">
@@ -461,22 +481,23 @@ html {
             </div>
         </div>
     </section>
-  
+
 
     <!-- Gallery Section Begin -->
     <div id="gallery" class="gallery-section">
+        <center><h2>Our Facilities</h2></center>
         <div class="gallery">
             <div class="grid-sizer"></div>
-            <div class="gs-item grid-wide set-bg" data-setbg="assets/w1.jpeg">
-                <a href="assets/w1.jpeg" class="thumb-icon image-popup"><i class="fa fa-picture-o"></i></a>
+            <div class="gs-item grid-wide set-bg" data-setbg="assets/1.jpg">
+                <a href="assets/1.jpg" class="thumb-icon image-popup"><i class="fa fa-picture-o"></i></a>
             </div>
-            <div class="gs-item set-bg" data-setbg="assets/w2.jpeg">
-                <a href="assets/w2.jpeg" class="thumb-icon image-popup"><i class="fa fa-picture-o"></i></a>
+            <div class="gs-item set-bg" data-setbg="assets/2.jpg">
+                <a href="assets/2.jpg" class="thumb-icon image-popup"><i class="fa fa-picture-o"></i></a>
             </div>
-            <div class="gs-item set-bg" data-setbg="assets/w3.jpeg">
-                <a href="assets/w3.jpeg" class="thumb-icon image-popup"><i class="fa fa-picture-o"></i></a>
+            <div class="gs-item set-bg" data-setbg="assets/3.jpg">
+                <a href="assets/3.jpg" class="thumb-icon image-popup"><i class="fa fa-picture-o"></i></a>
             </div>
-            <div class="gs-item set-bg" data-setbg="assets/w4.jpeg">
+            <!-- <div class="gs-item set-bg" data-setbg="assets/w4.jpeg">
                 <a href="assets/w4.jpeg" class="thumb-icon image-popup"><i class="fa fa-picture-o"></i></a>
             </div>
             <div class="gs-item set-bg" data-setbg="assets/w5.jpeg">
@@ -484,7 +505,7 @@ html {
             </div>
             <div class="gs-item grid-wide set-bg" data-setbg="assets/w6.jpeg">
                 <a href="assets/w6.jpeg" class="thumb-icon image-popup"><i class="fa fa-picture-o"></i></a>
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- Gallery Section End -->
@@ -501,7 +522,7 @@ html {
                     <div class="contact-widget">
                         <div class="cw-text">
                             <i class="fa fa-map-marker"></i>
-                            <p>333 Middle Winchendon Rd, Rindge,<br/> NH 03461</p>
+                            <p>333 Middle Winchendon Rd, Rindge,<br /> NH 03461</p>
                         </div>
                         <div class="cw-text">
                             <i class="fa fa-mobile"></i>
@@ -633,12 +654,12 @@ html {
                 <div class="col-lg-12 text-center">
                     <div class="copyright-text">
                         <p>
-                           
+
                             Copyright &copy;
                             <script>document.write(new Date().getFullYear());</script> All rights reserved | This
-                            template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a
-                                href="" target="_blank">sumire</a>
-                           
+                            template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href=""
+                                target="_blank">sumire</a>
+
                         </p>
                     </div>
                 </div>
