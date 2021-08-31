@@ -28,6 +28,9 @@
 </head>
 
 <style>
+    body {
+        overflow: auto;
+    }
     html {
         scroll-behavior: smooth;
     }
@@ -112,6 +115,11 @@
         height: 1000px;
         object-fit: cover;
     }
+
+    #head.scrolled {
+  background-color: #424242 !important;
+  transition: background-color 200ms linear;
+}
 </style>
 
 <body>
@@ -152,16 +160,16 @@
     <!-- Offcanvas Menu Section End -->
 
     <!-- Header Section Begin -->
-    <header class="header-section ">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-3">
+    <header id="head" class="header-section fixed-top" style="position: fixed;">
+        <div class="container-fluid ">
+            <div class="row ">
+                <div class="col-lg-3 ">
                     <!--<h2 style="color:#3ce207 ;">Body Buddies</h2>-->
                     <img data-aos="fade-down" style="width: 200px;top:0px;" src="assets/Logo - Transparent.png" alt="">
                 </div>
 
-                <div class="col-lg-6">
-                    <nav class="nav-menu">
+                <div class="col-lg-6 ">
+                    <nav class="nav-menu sticky-top">
                         <ul>
                             <li class="active"><a href="./index.html">Home</a></li>
                             <li><a href="#ppt">PPT</a></li>
@@ -851,6 +859,16 @@
 
         });
 
+
+    </script>
+
+    <script>
+        $(function () {
+  $(document).scroll(function () {
+    var $nav = $("#head");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
 
     </script>
 </body>
