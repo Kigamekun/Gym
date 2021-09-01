@@ -744,11 +744,11 @@
                 <div class="col-lg-6">
                     <div class="leave-comment">
                         <form action="#">
-                            <input type="text" placeholder="Name">
-                            <input type="text" placeholder="Email">
-                            <input type="text" placeholder="Website">
-                            <textarea placeholder="Comment"></textarea>
-                            <button type="submit">Submit</button>
+                            <input type="text" id="name" placeholder="Name">
+                            <input type="text" id="email" placeholder="Email">
+                            <input type="text" id="web" placeholder="Website">
+                            <textarea id="com" placeholder="Comment"></textarea>
+                            <button onclick="sendmail()">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -884,6 +884,26 @@
         </div>
     </div>
     <!-- Search model end -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+
+        function sendmail() {
+            Email.send({
+	Host: "smtp.gmail.com",
+	SecureToken :"389007a5-423b-4884-8fba-1b4b28e84c65",
+	To : "bodybuddiespt@gmail.com",
+	From : "reksa.prayoga1012@gmail.com",
+	Subject : "testtt",
+	Body : "testwe",
+	}).then(
+		message => alert("mail sent successfully")
+	);
+
+        }
+
+
+    </script>
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -894,7 +914,6 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -916,19 +935,6 @@
         });
 
 
-    </script>
-
-    <script>
-
-// Email.send({
-//     SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
-//     To : 'them@website.com',
-//     From : "you@isp.com",
-//     Subject : "This is the subject",
-//     Body : "And this is the body"
-// }).then(
-//   message => alert(message)
-// );
     </script>
 
     <script>
