@@ -890,7 +890,20 @@
         </div>
     </div>
     <!-- Search model end -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
 
+Email.send({
+    SecureToken : "ef2d21ba-d4c8-4231-b6c4-6eba4d10b42a",
+    Username: "bodybuddiespt@gmail.com", 
+    To : "bodybuddiespt@gmail.com",
+    From : "reksa.prayoga1012@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+</script>
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -900,7 +913,6 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -924,18 +936,6 @@
 
     </script>
 
-    <script>
-
-// Email.send({
-//     SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
-//     To : 'them@website.com',
-//     From : "you@isp.com",
-//     Subject : "This is the subject",
-//     Body : "And this is the body"
-// }).then(
-//   message => alert(message)
-// );
-    </script>
 
     <script>
         $(function () {
