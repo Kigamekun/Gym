@@ -2586,7 +2586,7 @@ ol {
 }
 
 .section-title.contact-title {
-	text-align: left;
+
 	margin-bottom: 35px;
 }
 
@@ -2687,6 +2687,24 @@ ol {
 	font-weight: 700;
 	letter-spacing: 2px;
 	margin-bottom: 15px;
+}
+
+.scial {
+	display: flex;
+	align-items: center;
+}
+
+
+.scial li {
+	
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+	margin: 10px;
+}
+
+.scial li a {
+	color: #3ce207;
 }
 
 .text-404 h3 {
