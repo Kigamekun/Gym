@@ -47,6 +47,8 @@
         outline: none;
     }
 
+
+    
     .slideshow .slider {
         box-shadow: 0 20px 50px -25px black;
     }
@@ -529,7 +531,7 @@
                         </div>
                         <h3>Personal Training 1:1</h3>
                         <div class="pi-price">
-                            <h2>€350 <span style="position: absolute;" data-bs-toggle="tooltip"
+                            <h2>€350 <span class="tip" style="position: absolute;" data-bs-toggle="tooltip"
                                     data-bs-placement="right" title="SESSIONS INCLUDE:
 - FREE NUTRITION CONSULTATION
 - UNLIMITED EQUIPMENTS
@@ -539,7 +541,7 @@
                             <span>8 sessions</span>
                         </div>
                         <div class="pi-price">
-                            <h2>€550 <span style="position: absolute;" data-bs-toggle="tooltip"
+                            <h2>€550 <span class="tip" style="position: absolute;" data-bs-toggle="tooltip"
                                     data-bs-placement="right" title="SESSIONS INCLUDE:
 - FREE NUTRITION CONSULTATION
 - UNLIMITED EQUIPMENTS
@@ -549,7 +551,7 @@
                             <span>12 sessions</span>
                         </div>
                         <div class="pi-price">
-                            <h2>€1450 <span style="position: absolute;" data-bs-toggle="tooltip"
+                            <h2>€1450 <span class="tip" style="position: absolute;" data-bs-toggle="tooltip"
                                     data-bs-placement="right" title="SESSIONS INCLUDE:
 - FREE NUTRITION CONSULTATION
 - UNLIMITED EQUIPMENTS
@@ -576,7 +578,7 @@
                             <p>VIP Package</p>
                         </div>
                         <div class="pi-price">
-                            <h2>€450 <span style="position: absolute;" data-bs-toggle="tooltip"
+                            <h2>€450 <span class="tip" style="position: absolute;" data-bs-toggle="tooltip"
                                     data-bs-placement="right" title="SESSIONS INCLUDE:
 - FREE NUTRITION CONSULTATION
 - UNLIMITED EQUIPMENTS
@@ -586,7 +588,7 @@
                             <span>8 sessions</span>
                         </div>
                         <div class="pi-price">
-                            <h2>€650 <span style="position: absolute;" data-bs-toggle="tooltip"
+                            <h2>€650 <span class="tip" style="position: absolute;" data-bs-toggle="tooltip"
                                     data-bs-placement="right" title="SESSIONS INCLUDE:
 - FREE NUTRITION CONSULTATION
 - UNLIMITED EQUIPMENTS
@@ -596,7 +598,7 @@
                             <span>12 sessions</span>
                         </div>
                         <div class="pi-price">
-                            <h2>€1800 <span style="position: absolute;" data-bs-toggle="tooltip"
+                            <h2>€1800 <span class="tip" style="position: absolute;" data-bs-toggle="tooltip"
                                     data-bs-placement="right" title="SESSIONS INCLUDE:
 - FREE NUTRITION CONSULTATION
 - UNLIMITED EQUIPMENTS
@@ -614,7 +616,7 @@
                         <h3>Group Training 6:1</h3>
 
                         <div class="pi-price">
-                            <h2>€160 <span style="position: absolute;" data-bs-toggle="tooltip"
+                            <h2>€160 <span class="tip" style="position: absolute;" data-bs-toggle="tooltip"
                                     data-bs-placement="right" title="SESSIONS INCLUDE:
 - FREE NUTRITION CONSULTATION
 - UNLIMITED EQUIPMENTS
@@ -629,7 +631,7 @@
                             <span>- Optional measurements monitoring<br></span>
                             <span>- Weight losing tips<br></span>
                             <span>- No time restriction<br></span>
-
+                            <!-- <button class="tip">My button</button> -->
                         </div>
                         <!--<a href="#" class="primary-btn pricing-btn">Enroll now</a>
                         <a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a>-->
@@ -825,7 +827,7 @@
     <!-- Team Section End -->
     <!-- Get In Touch Section Begin -->
    
-
+ 
 
     <!-- Get In Touch Section End -->
 
@@ -933,6 +935,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
     <script>
         AOS.init();
     </script>
@@ -953,7 +958,13 @@
 
     </script>
 
-
+<script>
+      tippy('.tip', {
+        content: "SESSIONS INCLUDE:<br>- FREE NUTRITION CONSULTATION<br>- UNLIMITED EQUIPMENTS<br>- OPTIONAL MEASUREMENTS MONITORING<br>- WEIGHT LOSING TIPS<br>- NO TIME RESTRICTION",
+        allowHTML: true,
+        trigger:'click'
+      });
+</script>
     <script>
         $(function () {
             $(document).scroll(function () {
